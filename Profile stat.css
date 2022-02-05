@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.stats-container{
+    margin: 20px;
+    border: dotted green 2px;
+    min-width: 200px;
+    height: 100px;
+    padding: 0 20px 20px 20px;
+}
+
+.stats-container h4{
+    position: relative;
+    bottom: 15px;
+    white-space: nowrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.stats-container.icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#iconapps{
+    color: rgb(55, 140, 238);
+}
+#iconcloud{
+    color: rgb(179, 210, 236);
+}
+#iconbriefcase{
+    color: rgb(119, 33, 33);
+}
+.counter{
+    position: relative;
+    color: green;
+    top: 0;
+    bottom: 0;
+    font-size: 40px;
+}
+
+
+@media (max-width:600px){
+    body{
+        flex-direction: column;
+    }
+}
+
